@@ -1,0 +1,20 @@
+First we have to make the path or folder should be git enabled for that we need to initialize first
+
+cd c:\gitHubProjectPath 
+git init
+
+then to Config our Email and  password Globally
+1) git config --global user.name "John Doe"
+2) git config --global user.email johndoe@example.com
+
+then if you want to change the user name and email then you can change the user name and email
+
+1) git config user.name "John Doe"
+2) git config user.email johndoe@example.com
+
+Now we  can create the project and push to git (or)
+Clone the repository 
+
+git clone gitUrltobecloned
+ex: git clone https://github.com/venk120soft/github-learnings-commands.git
+That means we are taking the whole project into our local Computer. Once the clone is done we can able to see all the files in our local system.

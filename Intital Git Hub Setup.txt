@@ -56,6 +56,11 @@ git checkout branchWeWantToWork
 
 ex: git checkout sampleBranchName
 
-This will switch the branch to sampleBranchName branch 
+This will switch the branch to sampleBranchName branch  do the changes you need .
+Then push the newly created branch to the upstream by using below command
 
-Now we can work on sampleBranchName branch
+ git push --set-upstream origin testBranch
+
+Every newly created needs to pushed to the Origin
+this may ask for the credentials we have to keyin the credentials
+Then We can commit and push our changes to the newly created branch.

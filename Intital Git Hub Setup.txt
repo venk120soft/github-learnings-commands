@@ -1,3 +1,4 @@
+------------------------------------------------------------------------------------------------------
 First we have to make the path or folder should be git enabled for that we need to initialize first
 
 cd c:\gitHubProjectPath 
@@ -62,5 +63,9 @@ Then push the newly created branch to the upstream by using below command
  git push --set-upstream origin testBranch
 
 Every newly created needs to pushed to the Origin
-this may ask for the credentials we have to keyin the credentials
+
+this may ask for the credentials we have to keyin the credentials, 
 Then We can commit and push our changes to the newly created branch.
+git branch newBranch2
+
+Fork Means Having full copy of source code into our own account, So that even though the original code is deleted, we will have a copy of it in our code.

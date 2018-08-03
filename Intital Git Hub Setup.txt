@@ -69,3 +69,16 @@ Then We can commit and push our changes to the newly created branch.
 git branch newBranch2
 
 Fork Means Having full copy of source code into our own account, So that even though the original code is deleted, we will have a copy of it in our code.
+---------------------------------------------------------------------------------------------------------------------------------------
+How to delete or undo the changes you have done on the specific branch?
+by using git stash command we can delete all the changes we have made, these changes will be saved in one place we can also apply these changes to same branch.
+
+How to apply the undo changes to your branch?
+by using git stash apply
+
+how to list out all the git stash history?
+by using git stash list
+
+how to re write or ammend the file changes to the just created commit?
+by using git commit --amend -m "updated commit message here".
+git commit --amend lets you take the most recent commit and add new staged changes to it. You can add or remove changes from the Git staging area to apply with a --amend commit

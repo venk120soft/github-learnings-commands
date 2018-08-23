@@ -92,3 +92,11 @@ To remove local commits
 git reset --soft HEAD^ // this is for last commit we got 
 git reset --soft "HEAD^"// this is on windows
 git reset --soft "asdf"
+
+To get one file from git repository
+git checkout <file name>// git checkout test.txt
+Note: this will override the changes you did for the file.
+
+To discard the changes in working directory
+git checkout -- <file name>
+

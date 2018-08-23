@@ -82,3 +82,13 @@ by using git stash list
 how to re write or ammend the file changes to the just created commit?
 by using git commit --amend -m "updated commit message here".
 git commit --amend lets you take the most recent commit and add new staged changes to it. You can add or remove changes from the Git staging area to apply with a --amend commit
+
+To Remove Untracked files from the Local repository
+git clean -f -d (or) git clean -fd
+To remove ignored files, run git clean -f -X or git clean -fX.
+To remove ignored and non-ignored files, run git clean -f -x or git clean -fx
+
+To remove local commits 
+git reset --soft HEAD^ // this is for last commit we got 
+git reset --soft "HEAD^"// this is on windows
+git reset --soft "asdf"

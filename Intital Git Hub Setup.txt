@@ -100,3 +100,5 @@ Note: this will override the changes you did for the file.
 To discard the changes in working directory
 git checkout -- <file name>
 
+To check the changes or differences in the working file 
+git diff <file name>

@@ -102,3 +102,11 @@ git checkout -- <file name>
 
 To check the changes or differences in the working file 
 git diff <file name>
+
+To get the latest changes in the master 
+git pull
+it works sometimes we need to get from the origin master then.
+git pull origin master
+
+to get from the specific branch
+git pull origin <branch name>

@@ -69,6 +69,13 @@ Then We can commit and push our changes to the newly created branch.
 git branch newBranch2
 
 Fork Means Having full copy of source code into our own account, So that even though the original code is deleted, we will have a copy of it in our code.
+
+How to undo the changes for a file(s)?
+To undo the changes for a specific file we can use 
+git checkout fileName
+
+For all files we can use
+git checkout .
 ---------------------------------------------------------------------------------------------------------------------------------------
 How to delete or undo the changes you have done on the specific branch?
 by using git stash command we can delete all the changes we have made, these changes will be saved in one place we can also apply these changes to same branch.

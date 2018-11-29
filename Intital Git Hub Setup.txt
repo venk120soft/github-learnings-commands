@@ -99,6 +99,7 @@ To remove local commits
 git reset --soft HEAD^ // this is for last commit we got 
 git reset --soft "HEAD^"// this is on windows
 git reset --soft "asdf"
+git reset --hard origin/master // this will reset your changes to origin master
 
 To get one file from git repository
 git checkout <file name>// git checkout test.txt

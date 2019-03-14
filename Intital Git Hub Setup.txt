@@ -120,7 +120,10 @@ to get from the specific branch
 git pull origin <branch name>
 
 What is the difference  between git pull and git pull origin master?
-Gir pull origin <branchname>: This will pull the changes made to the perticular branch.
-Gir pull origin master: This will pull all the changes made to the master.
-Git pull: This will pull all the changes made to the master as well it will will pull all the branches from the remote repository.
+Git pull origin <branchname>: This will pull the changes made to the perticular branch.
+Git pull origin master: This will pull all the changes made to the master.
+Git pull: This will pull all the changes made to the master as well it will pull all the branches from the remote repository.
 
+What is the difference between git pull and git fetch?
+In the simplest terms, git pull does a git fetch followed by a git merge.
+git pull = git fetch + git merge.

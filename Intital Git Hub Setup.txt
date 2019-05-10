@@ -57,6 +57,29 @@ git checkout branchWeWantToWork
 
 ex: git checkout sampleBranchName
 
+// creating new branch from current branch and switched to that branch
+git checkout -b newBranchName
+
+// creating the new branch from perticular branch(origin/release/2019.5.2) nad switching to that branch
+git checkout -b user/v-vechun/FixForCustomerLockboxPageLoadingInReactV2 origin/release/2019.5.2
+
+"
+C:\PAP\M365AdminUX>git push
+fatal: The upstream branch of your current branch does not match
+the name of your current branch.  To push to the upstream branch
+on the remote, use
+
+    git push origin HEAD:release/2019.5.2
+
+To push to the branch of the same name on the remote, use
+
+    git push origin user/v-vechun/FixForCustomerLockboxPageLoadingInReactV2
+
+To choose either option permanently, see push.default in 'git help config'.
+"
+We have to use git push origin user/v-vechun/FixForCustomerLockboxPageLoadingInReactV2
+
+Then  if you do git push origin HEAD:release/2019.5.2 it will directly pushed to that branch we dont do that.
 This will switch the branch to sampleBranchName branch  do the changes you need .
 Then push the newly created branch to the upstream by using below command
 

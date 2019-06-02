@@ -150,3 +150,6 @@ Git pull: This will pull all the changes made to the master as well it will pull
 What is the difference between git pull and git fetch?
 In the simplest terms, git pull does a git fetch followed by a git merge.
 git pull = git fetch + git merge.
+
+To check predefined shortcuts for the git is alias,  Go to the project folder then 
+C:\PAP\M365AdminUX>alias

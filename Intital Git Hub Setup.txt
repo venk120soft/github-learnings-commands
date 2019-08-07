@@ -153,3 +153,11 @@ git pull = git fetch + git merge.
 
 To check predefined shortcuts for the git is alias,  Go to the project folder then 
 C:\PAP\M365AdminUX>alias
+
+The below command checks out the remote branch, and your local branch name will be same as the remote branch.
+git checkout -t origin/future_branch (for example)
+
+If you want to override your local branch name on checkout:
+git checkout -t -b enhancement origin/future_branch
+
+Now your local branch name is enhancement, but your remote branch name is future_branch.

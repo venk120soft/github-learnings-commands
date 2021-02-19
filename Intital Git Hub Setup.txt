@@ -161,3 +161,8 @@ If you want to override your local branch name on checkout:
 git checkout -t -b enhancement origin/future_branch
 
 Now your local branch name is enhancement, but your remote branch name is future_branch.
+
+-------------------------------------------------------------------------------------------------
+For updating the comment from previous comment and add our latest changes to existing commit(local)
+
+git commit --amend -m "New commit message"

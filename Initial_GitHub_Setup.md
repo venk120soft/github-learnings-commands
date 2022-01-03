@@ -26,44 +26,42 @@ To add all files at a time
 git add -a 
 
 what ever we do the changes to files we are indexing them then once we indexed everything we are making the commit
-
+```
 git commit -m "Describe what you did in this commit" 
-
+```
 then push to the repository by using below command
-
+```
 git push
-
+```
 if it ask for credentials we have to mention then it will be pushed into 
 
-Working with branches
-
+# Working with branches
 Creating branch
-
+```
 git branch sampleBranchName
-
+```
 Now the branch is created, then now all the master code is available in sampleBranchName branch
 we can check all the branches for the repository by using below command
+
+```
 git branch 
-this will list out all the branches for that repository
+```
+this will list out all the branches for that repository,  in this the current working branch name will be heighlated in grean color
 
-How to check the current working branch name ?
-Git branch
-will list out all the branches, in this the current working branch name will be heighlated in grean color
-
-How do you switch to the branches??
+How do you switch to the branches?
 Once the branch is created then want to work on that branch we have to switch to that branch. for that 
-
-git checkout branchWeWantToWork
-
-ex: git checkout sampleBranchName
-
+```
+    git checkout branchWeWantToWork
+    ex: git checkout sampleBranchName
+```
 // creating new branch from current branch and switched to that branch
+```
 git checkout -b newBranchName
-
+```
 // creating the new branch from perticular branch(origin/release/2019.5.2) nad switching to that branch
+```
 git checkout -b user/v-vechun/FixForCustomerLockboxPageLoadingInReactV2 origin/release/2019.5.2
-
-"
+```
 C:\PAP\M365AdminUX>git push
 fatal: The upstream branch of your current branch does not match
 the name of your current branch.  To push to the upstream branch
@@ -119,34 +117,44 @@ To remove ignored files, run git clean -f -X or git clean -fX.
 To remove ignored and non-ignored files, run git clean -f -x or git clean -fx
 
 To remove local commits 
+```
 git reset --soft HEAD^ // this is for last commit we got 
 git reset --soft "HEAD^"// this is on windows
 git reset --soft "asdf"
 git reset --hard origin/master // this will reset your changes to origin master
-
+```
 To get one file from git repository
 git checkout <file name>// git checkout test.txt
 Note: this will override the changes you did for the file.
 
 To discard the changes in working directory
-git checkout -- <file name>
+
+    git checkout -- <file name>
 
 To check the changes or differences in the working file 
-git diff <file name>
+```
+    git diff <file name>
+```
 
 To get the latest changes in the master 
-git pull
+```
+    git pull
+```
 it works sometimes we need to get from the origin master then.
-git pull origin master
-
+```
+    git pull origin master
+```
 to get from the specific branch
-git pull origin <branch name>
+```
+   git  pull origin <branch name>
+```
 
-What is the difference  between git pull and git pull origin master?
+## What the difference  between git pull and git pull origin master?
+    ```
 Git pull origin <branchname>: This will pull the changes made to the perticular branch.
 Git pull origin master: This will pull all the changes made to the master.
 Git pull: This will pull all the changes made to the master as well it will pull all the branches from the remote repository.
-
+```
 What is the difference between git pull and git fetch?
 In the simplest terms, git pull does a git fetch followed by a git merge.
 git pull = git fetch + git merge.
@@ -166,3 +174,19 @@ Now your local branch name is enhancement, but your remote branch name is future
 For updating the comment from previous comment and add our latest changes to existing commit(local)
 
 git commit --amend -m "New commit message"
+
+## How to ber sync with forked Repo into your user repo
+ First Fork the repo, then clone the repo into local
+
+// Setting the upstream as forkedParentRepo to the local repo
+c:/mylocalforkedRepo> git remote add upstream git@github.com:abc-github/forkedParentRepository
+
+git fetch upstream
+
+// Below command will set our local master is synced with forked Parent Repository (where all others contributions are merged)
+git branch --set-upstream-to=upstream/master master
+
+from now on when we do the fetch/pull all the changes are merged into parent repo will come into local master
+
+Create a new branch
+git checkout -b branchName (you can )

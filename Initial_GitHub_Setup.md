@@ -190,3 +190,10 @@ from now on when we do the fetch/pull all the changes are merged into parent rep
 
 Create a new branch
 git checkout -b branchName (you can )
+```
+-------------------------------------------------------------------------------------------------
+## For pointing to the remote branch
+```
+    git remote -v
+    git push origin head -u
+```
